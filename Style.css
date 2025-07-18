@@ -123,3 +123,9 @@ h1 {
   color: #66A5AD; /* Soft brand teal on hover */
   text-decoration: underline;
 }
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
