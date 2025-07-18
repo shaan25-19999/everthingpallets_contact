@@ -129,3 +129,10 @@ h1 {
   margin-bottom: 15px;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
+.inline-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -2px;
+}
