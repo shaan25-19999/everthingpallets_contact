@@ -124,3 +124,13 @@ h1 {
   text-decoration: underline;
 
 }
+.logo-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  max-width: 160px;
+  height: auto;
+  display: inline-block;
+}
