@@ -2,79 +2,87 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: #f8fefc;
-  color: #081c15;
+  background: #F9F9F9;
+  color: #333333;
 }
 
 .contact-hero {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #d8f3dc, #f1faee);
+  background: linear-gradient(135deg, #EAF6F6, #FDFDFD);
   text-align: center;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  color: #1b4332;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #1C3D5A;
 }
 
 .intro {
-  font-size: 1.2rem;
-  color: #2d6a4f;
+  font-size: 1.15rem;
+  color: #66A5AD;
   margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
   margin-bottom: 2rem;
 }
 
 .cta {
-  padding: 14px 28px;
-  border-radius: 8px;
+  padding: 14px 26px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  font-size: 1.05rem;
+  display: inline-block;
 }
 
 .cta.call {
-  background-color: #40916c;
+  background-color: #1C3D5A;
   color: white;
 }
 
 .cta.whatsapp {
-  background-color: #1b4332;
+  background-color: #66A5AD;
   color: white;
 }
 
 .cta.email {
-  background-color: #2d6a4f;
-  color: white;
+  background-color: #D4AF37;
+  color: #1C3D5A;
 }
 
 .cta:hover {
   transform: translateY(-3px);
-  opacity: 0.95;
+  opacity: 0.96;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
 .response-time {
-  color: #6c757d;
+  color: #888888;
   font-size: 0.95rem;
+  margin-top: 1rem;
 }
 
 .footer {
-  background: #081c15;
-  color: #d8f3dc;
+  background: #1C3D5A;
+  color: white;
   padding: 20px;
   text-align: center;
   font-size: 0.9rem;
+  margin-top: 40px;
 }
