@@ -46,30 +46,48 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   font-size: 1.05rem;
   display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+/* 📞 Primary: Call Button with Gradient */
 .cta.call {
-  background-color: #1C3D5A;
+  background: linear-gradient(to right, #1C3D5A, #66A5AD);
   color: white;
+  border: none;
 }
 
+/* 🟢 WhatsApp: Glassy Teal Outline */
 .cta.whatsapp {
-  background-color: #66A5AD;
-  color: white;
+  background: transparent;
+  color: #66A5AD;
+  border: 2px solid #66A5AD;
 }
 
+/* ✉️ Email: Muted Gold Outline with Hover Fill */
 .cta.email {
-  background-color: #D4AF37;
-  color: #1C3D5A;
+  background: transparent;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
 }
 
 .cta:hover {
   transform: translateY(-3px);
-  opacity: 0.96;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  opacity: 0.98;
+}
+
+/* 🟢 WhatsApp hover fill */
+.cta.whatsapp:hover {
+  background: #66A5AD;
+  color: white;
+}
+
+/* ✉️ Email hover fill */
+.cta.email:hover {
+  background: #D4AF37;
+  color: #1C3D5A;
 }
 
 .response-time {
