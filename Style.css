@@ -8,9 +8,13 @@ body {
 
 .contact-hero {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #EAF6F6, #FDFDFD);
+  background: linear-gradient(135deg, #f9fefb, #e8f5e9);
+  background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+  background-size: cover;
+  background-blend-mode: soft-light;
   text-align: center;
-  border-bottom: 1px solid #E0E0E0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 .container {
