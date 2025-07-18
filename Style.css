@@ -7,7 +7,7 @@ body {
 }
 
 .contact-hero {
-  padding: 80px 20px;
+  padding: 40px 20px 60px; /* 🔽 Reduced top padding */
   background: linear-gradient(135deg, #EAF6F6, #FDFDFD);
   text-align: center;
   border-bottom: 1px solid #E0E0E0;
@@ -51,21 +51,18 @@ h1 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-/* 📞 Primary: Call Button with Gradient */
 .cta.call {
   background: linear-gradient(to right, #1C3D5A, #66A5AD);
   color: white;
   border: none;
 }
 
-/* 🟢 WhatsApp: Glassy Teal Outline */
 .cta.whatsapp {
   background: transparent;
   color: #66A5AD;
   border: 2px solid #66A5AD;
 }
 
-/* ✉️ Email: Muted Gold Outline with Hover Fill */
 .cta.email {
   background: transparent;
   color: #D4AF37;
@@ -78,13 +75,11 @@ h1 {
   opacity: 0.98;
 }
 
-/* 🟢 WhatsApp hover fill */
 .cta.whatsapp:hover {
   background: #66A5AD;
   color: white;
 }
 
-/* ✉️ Email hover fill */
 .cta.email:hover {
   background: #D4AF37;
   color: #1C3D5A;
@@ -104,8 +99,9 @@ h1 {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
 .top-nav {
-  background: #F9F9F9; /* Matches body background */
+  background: #F9F9F9;
   padding: 12px 20px;
   text-align: left;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -113,20 +109,21 @@ h1 {
 
 .home-link {
   font-size: 1rem;
-  color: #1C3D5A; /* Primary brand blue */
+  color: #1C3D5A;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .home-link:hover {
-  color: #66A5AD; /* Soft brand teal on hover */
+  color: #66A5AD;
   text-decoration: underline;
-
 }
+
 .logo-container {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* 🔽 Reduced top margin */
+  margin-bottom: -1rem; /* 🔽 Pulls up the section below */
 }
 
 .logo {
