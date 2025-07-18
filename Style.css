@@ -7,23 +7,51 @@ html, body {
   color: #333333;
 }
 
-/* Top bar */
+/* Top bar with polished gradient and border */
 .top-nav {
-  background: #F9F9F9;
-  padding: 12px 20px 0; /* Removed bottom padding */
+  background: linear-gradient(to right, #EAF6F6, #DDEAF4);
+  padding: 14px 20px;
   margin: 0;
   text-align: left;
-  box-shadow: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  border-bottom: 1px solid #D3E3EC;
+  display: flex;
+  align-items: center;
 }
 
-/* Logo above hero */
+/* Home link styling with icon */
+.home-link {
+  font-size: 1rem;
+  color: #1C3D5A;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.home-link:hover {
+  color: #66A5AD;
+  text-decoration: underline;
+}
+
+.home-icon {
+  stroke: #1C3D5A;
+  transition: stroke 0.2s ease;
+}
+
+.home-link:hover .home-icon {
+  stroke: #66A5AD;
+}
+
+/* Logo section */
 .logo-container {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* Logo size */
 .logo {
   max-width: 160px;
   height: auto;
@@ -31,8 +59,9 @@ html, body {
   margin-bottom: 0.5rem;
 }
 
+/* Hero section */
 .contact-hero {
-  padding: 30px 20px 60px; /* ⬅️ Reduced top padding */
+  padding: 30px 20px 60px;
   background: linear-gradient(135deg, #EAF6F6, #FDFDFD);
   text-align: center;
   border-bottom: 1px solid #E0E0E0;
@@ -57,6 +86,7 @@ h1 {
   line-height: 1.6;
 }
 
+/* CTA buttons */
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -110,12 +140,14 @@ h1 {
   color: #1C3D5A;
 }
 
+/* Response time below buttons */
 .response-time {
   color: #888888;
   font-size: 0.95rem;
   margin-top: 1rem;
 }
 
+/* Footer */
 .footer {
   background: #1C3D5A;
   color: white;
@@ -123,17 +155,4 @@ h1 {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 40px;
-}
-
-.home-link {
-  font-size: 1rem;
-  color: #1C3D5A;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.home-link:hover {
-  color: #66A5AD;
-  text-decoration: underline;
 }
