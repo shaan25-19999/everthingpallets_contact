@@ -149,7 +149,7 @@ h1 {
 
 /* Footer */
 .footer {
-  background: #1C3D5A;
+  background: linear-gradient(to right, #1C3D5A, #66A5AD);
   color: white;
   padding: 20px;
   text-align: center;
