@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Peltra • Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact • Peltra</title>
+  <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
 
-  <!-- Header / Nav (reuse your site nav) -->
-  <nav class="top-nav">
-    <div class="links">
+  <!-- Top nav only (no hero here) -->
+  <nav>
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="market.html">Market Prices</a>
       <a href="news.html">News</a>
@@ -18,93 +18,90 @@
     </div>
   </nav>
 
-  <!-- HERO → same feel as your original (logo centered, big headline) -->
-  <header class="hero">
-    <img src="assets/Logo.png" alt="PELLETRATES by PELTRA" class="hero-logo">
-    <h1 class="hero-title">Let’s Talk</h1>
-    <p class="hero-sub">
-      Tell us what you need. Whether it's biomass pellets, raw materials, or strategic supply —
-      we’re just one call away.
-    </p>
+  <main>
+    <!-- Hero lives in the body (light background like your original) -->
+    <section class="hero">
+      <img src="assets/Logo.png" alt="PELLETRATES by PELTRA" class="hero-logo" />
+      <h1 class="hero-title">Let’s Talk</h1>
+      <p class="hero-subtitle">
+        Tell us what you need. Whether it's biomass pellets, raw materials, or
+        strategic supply — we’re just one call away.
+      </p>
 
-    <div class="hero-cta">
-      <a href="tel:+91XXXXXXXXXX" class="btn primary">📞 Call Us Now</a>
-      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Peltra%2C%20I%27d%20like%20to%20discuss%20pellet%20supply."
-         class="btn ghost" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
-    </div>
-  </header>
+      <div class="hero-cta">
+        <a class="btn primary" href="tel:+91XXXXXXXXXX">
+          <span class="ico">📞</span> Call Us Now
+        </a>
+        <a class="btn outline" id="waTop" target="_blank" rel="noopener">
+          <span class="ico">💬</span> Chat on WhatsApp
+        </a>
+        <a class="btn gold" href="mailto:sales@peltra.in?subject=Peltra%20enquiry">
+          <span class="ico">✉️</span> Email Us
+        </a>
+      </div>
 
-  <main class="container">
+      <p class="response-note">We usually respond within 10 minutes during working hours.</p>
+    </section>
+
     <!-- Quick message card (Netlify Forms) -->
     <section class="card">
       <h2>Send a quick message</h2>
       <p class="muted">We usually respond in <strong>under 10 minutes</strong> during working hours.</p>
 
-      <form name="contact-quick" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
-        <!-- Netlify required hidden fields -->
-        <input type="hidden" name="form-name" value="contact-quick">
-        <p class="hidden"><label>Don’t fill this: <input name="bot-field" /></label></p>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
 
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" placeholder="Your name" required>
-        </label>
+        <div class="grid-2">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" id="cName" placeholder="Your name" required />
+          </label>
 
-        <label>
-          <span>Phone / WhatsApp</span>
-          <input type="tel" name="phone" inputmode="tel" placeholder="+91-XXXXXXXXXX" required>
-        </label>
+          <label class="field">
+            <span>Phone / WhatsApp</span>
+            <input type="tel" name="phone" id="cPhone" placeholder="+91-XXXXXXXXXX" required />
+          </label>
+        </div>
 
-        <label class="full">
+        <label class="field">
           <span>Message</span>
-          <textarea name="message" rows="4" placeholder="Tell us what you need — rates, supply support, quality, etc." required></textarea>
+          <textarea name="message" id="cMsg" rows="4" placeholder="Tell us what you need — rates, supply support, quality, etc." required></textarea>
         </label>
 
         <div class="actions">
           <button type="submit" class="btn primary">Send Message</button>
-          <a class="btn outline" target="_blank" rel="noopener"
-             href="https://wa.me/91XXXXXXXXXX?text=Hi%20Peltra%2C%20I%20need%20help%20with%20biomass%20pellets.">Or WhatsApp</a>
+          <a id="waInline" class="btn ghost" target="_blank" rel="noopener">Or WhatsApp</a>
         </div>
 
-        <p id="formStatus" class="status" aria-live="polite"></p>
+        <div id="formStatus" class="form-status" aria-live="polite"></div>
       </form>
     </section>
 
-    <!-- Trust / Reasons cards -->
-    <section class="grid">
-      <article class="card info">
-        <div class="icon">⚡</div>
+    <!-- Trust/USP cards -->
+    <section class="usp-grid">
+      <article class="usp">
+        <div class="usp-ico">⚡</div>
         <h3>Fast response</h3>
         <p>You get quick, actionable answers — not a ticket number.</p>
       </article>
-
-      <article class="card info">
-        <div class="icon">✅</div>
+      <article class="usp">
+        <div class="usp-ico">✅</div>
         <h3>Verified rates</h3>
         <p>Backed by live market tracking and direct supplier checks.</p>
       </article>
-
-      <article class="card info">
-        <div class="icon">🧪</div>
+      <article class="usp">
+        <div class="usp-ico">🧪</div>
         <h3>Quality support</h3>
         <p>Specs, trials, and sourcing help so supply issues don’t stop production.</p>
       </article>
     </section>
   </main>
 
-  <!-- Sticky mobile bar -->
-  <div class="sticky">
-    <a href="tel:+91XXXXXXXXXX" class="btn pill">📞&nbsp;Call Now</a>
-    <span class="dot">•</span>
-    <a class="link" target="_blank" rel="noopener"
-       href="https://wa.me/91XXXXXXXXXX?text=Hi%20Peltra%2C%20I%27m%20looking%20for%20pellet%20supply.">WhatsApp</a>
-  </div>
-
   <footer class="site-footer">
-    <p>© 2025 Peltra. Built for the biomass industry.</p>
+    © 2025 Peltra. Built for the biomass industry.
   </footer>
 
-  <!-- Small enhancement JS (optional but nice UX) -->
   <script src="contact.js"></script>
 </body>
 </html>
